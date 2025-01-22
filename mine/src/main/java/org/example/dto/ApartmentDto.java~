@@ -1,0 +1,43 @@
+package org.example.dto;
+
+import java.math.BigDecimal;
+
+public class ApartmentDto {
+    private String number;
+    private BigDecimal area;
+    private long ownerId; // Reference to the owner
+    private long buildingId; // Reference to the building
+
+    // Getters and Setters
+    public String getNumber() {
+        return String.valueOf(Integer.parseInt(number));
+    }
+
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public BigDecimal getArea() {
+        return area;
+    }
+
+    public void setArea(BigDecimal area) {
+        this.area = area;
+    }
+
+    public long getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(long ownerId) {
+        this.ownerId = ownerId;
+    }
+
+    public long getBuildingId() {
+        return buildingId;
+    }
+
+    public void setBuildingId(long buildingId) {
+        this.buildingId = buildingId;
+    }
+}

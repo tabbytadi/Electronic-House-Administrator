@@ -1,18 +1,18 @@
 package org.example.dao;
 
-import org.example.entity.Company;
+import org.example.entity.Employee;
 import org.example.util.SessionFactoryUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import java.util.List;
 
-public class CompanyDao {
-    public static void saveCompany(Company company) {
+public class EmployeeDao {
+    public static void saveEmployee(Employee employee) {
         Transaction transaction = null;
         try (Session session = SessionFactoryUtil.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-            session.save(company);
+            session.save(employee);
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) transaction.rollback();
@@ -20,11 +20,11 @@ public class CompanyDao {
         }
     }
 
-    public static void updateCompany(Company company) {
+    public static void updateEmployee(Employee employee) {
         Transaction transaction = null;
         try (Session session = SessionFactoryUtil.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-            session.update(company);
+            session.update(employee);
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) transaction.rollback();
@@ -32,11 +32,11 @@ public class CompanyDao {
         }
     }
 
-    public static void deleteCompany(Company company) {
+    public static void deleteEmployee(Employee employee) {
         Transaction transaction = null;
         try (Session session = SessionFactoryUtil.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-            session.delete(company);
+            session.delete(employee);
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) transaction.rollback();
@@ -44,16 +44,15 @@ public class CompanyDao {
         }
     }
 
-    public static Company getCompanyById(long id) {
+    public static Employee getEmployeeById(long id) {
         try (Session session = SessionFactoryUtil.getSessionFactory().openSession()) {
-            return session.get(Company.class, id);
+            return session.get(Employee.class, id);
         }
     }
 
-    public static List<Company> getAllCompanies() {
+    public static List<Employee> getAllEmployees() {
         try (Session session = SessionFactoryUtil.getSessionFactory().openSession()) {
-            return session.createQuery("FROM Company", Company.class).list();
+            return session.createQuery("FROM Employee", Employee.class).list();
         }
     }
-
 }

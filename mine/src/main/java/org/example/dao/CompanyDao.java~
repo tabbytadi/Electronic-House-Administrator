@@ -55,5 +55,5 @@ public class CompanyDao {
             return session.createQuery("FROM Company", Company.class).list();
         }
     }
-
+    
 }

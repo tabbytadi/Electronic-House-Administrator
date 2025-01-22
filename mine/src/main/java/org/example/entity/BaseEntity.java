@@ -1,9 +1,6 @@
 package org.example.entity;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
 
 @MappedSuperclass
 public class BaseEntity {
@@ -11,8 +8,7 @@ public class BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    public BaseEntity() {
-    }
+    public BaseEntity() {}
 
     public BaseEntity(long id) {
         this.id = id;

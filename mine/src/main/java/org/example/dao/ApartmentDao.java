@@ -1,18 +1,18 @@
 package org.example.dao;
 
-import org.example.entity.Company;
+import org.example.entity.Apartment;
 import org.example.util.SessionFactoryUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import java.util.List;
 
-public class CompanyDao {
-    public static void saveCompany(Company company) {
+public class ApartmentDao {
+    public static void saveApartment(Apartment apartment) {
         Transaction transaction = null;
         try (Session session = SessionFactoryUtil.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-            session.save(company);
+            session.save(apartment);
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) transaction.rollback();
@@ -20,11 +20,11 @@ public class CompanyDao {
         }
     }
 
-    public static void updateCompany(Company company) {
+    public static void updateApartment(Apartment apartment) {
         Transaction transaction = null;
         try (Session session = SessionFactoryUtil.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-            session.update(company);
+            session.update(apartment);
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) transaction.rollback();
@@ -32,11 +32,11 @@ public class CompanyDao {
         }
     }
 
-    public static void deleteCompany(Company company) {
+    public static void deleteApartment(Apartment apartment) {
         Transaction transaction = null;
         try (Session session = SessionFactoryUtil.getSessionFactory().openSession()) {
             transaction = session.beginTransaction();
-            session.delete(company);
+            session.delete(apartment);
             transaction.commit();
         } catch (Exception e) {
             if (transaction != null) transaction.rollback();
@@ -44,16 +44,15 @@ public class CompanyDao {
         }
     }
 
-    public static Company getCompanyById(long id) {
+    public static Apartment getApartmentById(long id) {
         try (Session session = SessionFactoryUtil.getSessionFactory().openSession()) {
-            return session.get(Company.class, id);
+            return session.get(Apartment.class, id);
         }
     }
 
-    public static List<Company> getAllCompanies() {
+    public static List<Apartment> getAllApartments() {
         try (Session session = SessionFactoryUtil.getSessionFactory().openSession()) {
-            return session.createQuery("FROM Company", Company.class).list();
+            return session.createQuery("FROM Apartment", Apartment.class).list();
         }
     }
-
 }

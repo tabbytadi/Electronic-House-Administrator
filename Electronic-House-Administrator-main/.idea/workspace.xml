@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="971d934d-bbf4-4bce-9b5a-4e8b6b493e57" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/dao/ApartmentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/dao/BuildingDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/dao/EmployeeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/dao/ResidentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/dto/ApartmentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/dto/BuildingDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/dto/EmployeeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/dto/ResidentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/PetType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/service/contracts/ApartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/service/contracts/BuildingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/service/contracts/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/service/contracts/ResidentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/service/implementations/ApartmentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/service/implementations/BuildingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/service/implementations/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/service/implementations/ResidentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/validator/InvalidNames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/src/main/java/org/example/configuration/SessionFactoryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/util/SessionFactoryUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/src/main/java/org/example/dao/CompanyDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/dao/CompanyDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/src/main/java/org/example/dto/CompanyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/dto/CompanyDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/Apartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/Apartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/Building.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/Resident.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/entity/Resident.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/src/main/java/org/example/service/contracts/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/service/contracts/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mine/src/main/java/org/example/service/implementations/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mine/src/main/java/org/example/service/implementations/CompanyServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2ruew5Fr5fZcw78znDG3Ya2GiXb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="971d934d-bbf4-4bce-9b5a-4e8b6b493e57" name="Changes" comment="" />
+      <created>1737413622624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737413622624</updated>
+    </task>
+    <servers />
+  </component>
+</project>

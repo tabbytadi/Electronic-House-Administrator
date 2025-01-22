@@ -1,5 +1,6 @@
 package org.example.dto;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -8,7 +9,7 @@ public class CompanyDto {
     private String name;
     private String address;  // Added address to match entity
     private Date foundationDate;
-    private List<Long> employeeIds; // List of Employee IDs
+    private List<Long> employeeIds = new ArrayList<>(); // Initialized to an empty list
 
     // Getters and Setters
     public long getCompanyId() {
@@ -48,6 +49,10 @@ public class CompanyDto {
     }
 
     public void setEmployeeIds(List<Long> employeeIds) {
-        this.employeeIds = employeeIds;
+        if (employeeIds == null) {
+            this.employeeIds = new ArrayList<>(); // Ensure no null assignment
+        } else {
+            this.employeeIds = employeeIds;
+        }
     }
 }

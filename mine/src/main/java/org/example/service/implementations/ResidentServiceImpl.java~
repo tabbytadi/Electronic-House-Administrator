@@ -1,0 +1,33 @@
+package org.example.service.implementations;
+
+import org.example.dao.ApartmentDao;
+import org.example.dao.ResidentDao;
+import org.example.dto.ResidentDto;
+import org.example.entity.Resident;
+import org.example.entity.Apartment;
+import org.example.service.contracts.ResidentService;
+
+import java.util.List;
+
+public class ResidentServiceImpl {
+
+    private final ResidentDao residentDao;
+    private final ApartmentDao apartmentDao;
+
+    public ResidentServiceImpl(ResidentDao residentDao, ApartmentDao apartmentDao) {
+        this.residentDao = residentDao;
+        this.apartmentDao = apartmentDao;
+    }
+
+    public void createResident(String name, int age, boolean usesElevator, Long apartmentId) {
+        Apartment apartment = apartmentDao.getApartmentById(apartmentId);
+        if (apartment == null) {
+            throw new IllegalArgumentException("Apartment with ID " + apartmentId + " not found.");
+        }
+
+        Resident resident = new Resident(name, age, usesElevator, apartment);
+        residentDao.saveResident(resident); // This will save in both Person and Resident tables
+    }
+
+    // Other methods (update, delete, etc.)
+}
